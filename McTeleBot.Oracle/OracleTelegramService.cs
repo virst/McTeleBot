@@ -16,7 +16,7 @@ namespace McTeleBot.Oracle
         {
             _logger = logger;
             dbConn = new OracleConnection(Program.DbConnStr);
-            _delaySecs = 60;
+            _delaySecs = Convert.ToInt32(Environment.GetEnvironmentVariable("DELAY_SEC") ?? "60");
         }
 
         public async Task StartAsync(CancellationToken cancellationToken)

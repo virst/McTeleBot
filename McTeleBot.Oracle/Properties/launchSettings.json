@@ -3,7 +3,7 @@
     "McTeleBot.Oracle": {
       "commandName": "Project",
       "environmentVariables": {
-        "DB_CONN": "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=172.30.2.26)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=osb)));User Id=RWC;Password=RWC"
+        "DB_CONN": "Data Source=*;User Id=RWC;Password=RWC"
       }
     }
   }
